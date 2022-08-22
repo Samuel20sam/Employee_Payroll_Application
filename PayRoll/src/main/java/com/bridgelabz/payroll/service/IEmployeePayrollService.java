@@ -5,7 +5,7 @@ import com.bridgelabz.payroll.model.EmployeePayrollData;
 
 import java.util.List;
 
-public interface EmployeePayrollServiceImpl {
+public interface IEmployeePayrollService {
     List<EmployeePayrollData> getEmployeePayrollData();
 
     EmployeePayrollData getEmployeePayrollDataById(int empId);
