@@ -3,10 +3,13 @@ package com.bridgelabz.payroll.controller;
 import com.bridgelabz.payroll.DTO.EmployeePayrollDTO;
 import com.bridgelabz.payroll.DTO.ResponseDTO;
 import com.bridgelabz.payroll.model.EmployeePayrollData;
+import com.bridgelabz.payroll.service.EmployeePayrollService;
 import com.bridgelabz.payroll.service.EmployeePayrollServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/EmployeePayroll")
@@ -18,18 +21,17 @@ public class EmployeePayrollController {
         this.employeePayrollService = employeePayrollService;
     }
 
-    @RequestMapping(value = {"/get"})
+    @RequestMapping(value = {"/get"},method = RequestMethod.GET)
     public ResponseEntity<ResponseDTO> getEmployeePayrollData() {
-        EmployeePayrollData employeePayrollData = null;
-        employeePayrollData = new EmployeePayrollData();
-        ResponseDTO responseDTO = new ResponseDTO("Success Call!!!", employeePayrollData);
-        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
+        List<EmployeePayrollData> employeePayrollDataList = employeePayrollService.getEmployeePayrollData();
+        ResponseDTO respDTO = new ResponseDTO("Get Call is Successful", employeePayrollDataList);
+        return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
     @GetMapping("/get/{empId}")
     public ResponseEntity<ResponseDTO> getEmployeePayrollData(@PathVariable("empId") int empId) {
         EmployeePayrollData employeePayrollData = employeePayrollService.getEmployeePayrollDataById(empId);
-        ResponseDTO respDTO = new ResponseDTO("Get Call For ID Successful", employeePayrollData);
+        ResponseDTO respDTO = new ResponseDTO("Get Call For ID is Successful", employeePayrollData);
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
