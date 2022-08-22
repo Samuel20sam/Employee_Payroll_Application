@@ -314,3 +314,15 @@ Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.we
 2022-08-22 11:12:26.096  WARN 17568 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-08-22 11:12:26.649  INFO 17568 --- [restartedMain] c.b.payroll.EmployeePayrollApplication   : Started EmployeePayrollApplication in 3.019 seconds (JVM running for 3.636)
 2022-08-22 11:12:26.652  INFO 17568 --- [restartedMain] c.b.payroll.EmployeePayrollApplication   : Employee Payroll App Started in COMMON Environment
+2022-2022-08 12:01 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 24184 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by SAMUE in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 12:01 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 12:01 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 12:01 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 12:01 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 5.35 seconds (JVM running for 6.355)
+2022-2022-08 12:01 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:14] Employee Payroll App Started in dev Environment
+2022-2022-08 12:02 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 11940 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by SAMUE in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 12:02 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 12:02 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 12:02 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 12:02 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 4.745 seconds (JVM running for 5.649)
+2022-2022-08 12:02 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:14] Employee Payroll App Started in dev Environment
