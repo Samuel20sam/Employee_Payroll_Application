@@ -20,9 +20,20 @@ public class EmployeePayrollExceptionsHandler {
 
         List<ObjectError> errorList = exception.getBindingResult().getAllErrors();
 
-        List<String> errorMessage = errorList.stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.toList());
+        List<String> errorMessage = errorList
+                .stream()
+                .map(DefaultMessageSourceResolvable::getDefaultMessage)
+                .collect(Collectors.toList());
 
         ResponseDTO responseDTO = new ResponseDTO("Exception While processing REST Request", errorMessage);
+
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(EmployeePayrollException.class)
+    public ResponseEntity<ResponseDTO> handleEmployeePayrollException(EmployeePayrollException exception) {
+
+        ResponseDTO responseDTO = new ResponseDTO("Exception while processing REST request", exception.getMessage());
 
         return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
     }

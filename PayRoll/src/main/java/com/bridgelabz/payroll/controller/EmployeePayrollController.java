@@ -3,7 +3,7 @@ package com.bridgelabz.payroll.controller;
 import com.bridgelabz.payroll.DTO.EmployeePayrollDTO;
 import com.bridgelabz.payroll.DTO.ResponseDTO;
 import com.bridgelabz.payroll.model.EmployeePayrollData;
-import com.bridgelabz.payroll.service.EmployeePayrollServiceImpl;
+import com.bridgelabz.payroll.service.IEmployeePayrollService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +15,9 @@ import java.util.List;
 @RequestMapping("/EmployeePayroll")
 public class EmployeePayrollController {
 
-    private final EmployeePayrollServiceImpl employeePayrollService;
+    private final IEmployeePayrollService employeePayrollService;
 
-    public EmployeePayrollController(EmployeePayrollServiceImpl employeePayrollService) {
+    public EmployeePayrollController(IEmployeePayrollService employeePayrollService) {
         this.employeePayrollService = employeePayrollService;
     }
 
