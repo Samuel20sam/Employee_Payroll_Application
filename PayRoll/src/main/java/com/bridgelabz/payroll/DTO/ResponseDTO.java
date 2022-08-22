@@ -1,12 +1,8 @@
 package com.bridgelabz.payroll.DTO;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
-@Getter
-@Setter
 public class ResponseDTO {
     private String message;
     private Object data;
