@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(schema = "Employee_payroll")
+@Table(name = "Employee_payroll")
 @NoArgsConstructor
 
 public class EmployeePayrollData {
