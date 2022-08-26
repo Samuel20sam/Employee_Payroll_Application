@@ -14,7 +14,7 @@ public class EmployeePayrollData {
 
     @Id
     @GeneratedValue()
-    @Column(name = "id")
+    @Column(name = "emp_id")
     private int empID;
 
     @Column(name = "name")
@@ -31,7 +31,7 @@ public class EmployeePayrollData {
     public String profilePicture;
     @ElementCollection
     @CollectionTable(name = "employee_department", joinColumns = @JoinColumn(name = "id"))
-    @Column(name = "department")
+    @Column(name = "departments")
     private List<String> departments;
 
     public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
