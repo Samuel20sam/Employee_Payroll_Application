@@ -549,3 +549,147 @@ java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
 2022-2022-08 13:13 [WARN][http-nio-8080-exec-8][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
 2022-2022-08 13:13 [WARN][http-nio-8080-exec-9][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
 2022-2022-08 13:13 [DEBUG][http-nio-8080-exec-10][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1003, name=Samuel, salary=60000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 13:36 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 7804 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by root in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 13:36 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 13:36 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 13:37 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 13:37 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 3.789 seconds (JVM running for 4.391)
+2022-2022-08 13:37 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:15] Employee Payroll App Started in dev Environment
+2022-2022-08 13:37 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:16] Employee Payroll DB User is root
+2022-2022-08 13:37 [DEBUG][http-nio-8080-exec-2][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1001, name=Samuel, salary=60000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 13:37 [DEBUG][http-nio-8080-exec-3][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1002, name=Samuel, salary=100000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 13:37 [DEBUG][http-nio-8080-exec-6][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 13:50 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 26648 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by root in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 13:50 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 13:50 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 13:51 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 13:51 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 5.164 seconds (JVM running for 5.772)
+2022-2022-08 13:51 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:15] Employee Payroll App Started in dev Environment
+2022-2022-08 13:51 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:16] Employee Payroll DB User is root
+2022-2022-08 13:51 [DEBUG][http-nio-8080-exec-1][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 13:51 [DEBUG][http-nio-8080-exec-1][c.b.p.s.EmployeePayrollService:39] Emp Data: EmployeePayrollData(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 13:51 [ERROR][http-nio-8080-exec-1][o.h.e.j.s.SqlExceptionHelper:142] Field 'emp_id' doesn't have a default value
+2022-2022-08 13:51 [ERROR][http-nio-8080-exec-1][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement] with root cause
+java.sql.SQLException: Field 'emp_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy111.save(Unknown Source)
+	at com.bridgelabz.payroll.service.EmployeePayrollService.createEmployeePayrollData(EmployeePayrollService.java:40)
+	at com.bridgelabz.payroll.controller.EmployeePayrollController.addEmployeePayrollData(EmployeePayrollController.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-2022-08 14:07 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 17004 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by root in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 14:07 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 14:07 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 14:07 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 14:07 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 3.079 seconds (JVM running for 3.708)
+2022-2022-08 14:07 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:15] Employee Payroll App Started in dev Environment
+2022-2022-08 14:07 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:16] Employee Payroll DB User is root
+2022-2022-08 14:11 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 12020 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by root in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 14:11 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 14:11 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 14:11 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 14:11 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 5.186 seconds (JVM running for 5.792)
+2022-2022-08 14:11 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:15] Employee Payroll App Started in dev Environment
+2022-2022-08 14:11 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:16] Employee Payroll DB User is root
+2022-2022-08 14:12 [DEBUG][http-nio-8080-exec-2][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 14:12 [DEBUG][http-nio-8080-exec-2][c.b.p.s.EmployeePayrollService:39] Emp Data: EmployeePayrollData(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 14:16 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:55] Starting EmployeePayrollApplication using Java 17.0.2 on Samuel-Ideapad with PID 3512 (S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll\target\classes started by root in S:\Bridge-labz\Bridge_labz_JAVA\PracticeProblems\Day_4_PayRoll\PayRoll)
+2022-2022-08 14:16 [DEBUG][restartedMain][c.b.p.EmployeePayrollApplication:56] Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-2022-08 14:16 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:640] The following 1 profile is active: "dev"
+2022-2022-08 14:16 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-08 14:16 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:61] Started EmployeePayrollApplication in 3.011 seconds (JVM running for 3.652)
+2022-2022-08 14:16 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:15] Employee Payroll App Started in dev Environment
+2022-2022-08 14:16 [INFO][restartedMain][c.b.p.EmployeePayrollApplication:16] Employee Payroll DB User is root
+2022-2022-08 14:16 [DEBUG][http-nio-8080-exec-4][c.b.p.c.EmployeePayrollController:57] Employee DTO: EmployeePayrollDTO(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])
+2022-2022-08 14:16 [DEBUG][http-nio-8080-exec-4][c.b.p.s.EmployeePayrollService:39] Emp Data: EmployeePayrollData(employeeID=1003, name=Samuel, salary=500000, gender=Male, startDate=2020-01-20, note=Corss function, profilePicture=../assets/profile-images/Ellipse -3.png, departments=[Operations, Planning])

@@ -3,17 +3,22 @@ package com.bridgelabz.payroll.service;
 import com.bridgelabz.payroll.DTO.EmployeePayrollDTO;
 import com.bridgelabz.payroll.exceptions.EmployeePayrollException;
 import com.bridgelabz.payroll.model.EmployeePayrollData;
+import com.bridgelabz.payroll.repository.EmployeePayrollRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 @Service
+@Slf4j
 public class EmployeePayrollService implements IEmployeePayrollService {
+    private final EmployeePayrollRepository employeePayrollRepository;
     private final List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
 
+    public EmployeePayrollService(EmployeePayrollRepository employeePayrollRepository) {
+        this.employeePayrollRepository = employeePayrollRepository;
+    }
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData() {
         return employeePayrollList;
@@ -31,7 +36,8 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
         EmployeePayrollData employeePayrollData = new EmployeePayrollData(empPayrollDTO);
         employeePayrollList.add(employeePayrollData);
-        return employeePayrollData;
+        log.debug("Emp Data: " + employeePayrollData.toString());
+        return employeePayrollRepository.save(employeePayrollData);
     }
 
     @Override
