@@ -21,13 +21,13 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     }
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData() {
-        return employeePayrollList;
+        return employeePayrollRepository.findAll();
     }
 
     @Override
     public EmployeePayrollData getEmployeePayrollDataById(int empId) {
         return employeePayrollList.stream()
-                .filter(empData -> empData.getEmployeeID() == empId)
+                .filter(empData -> empData.getEmpID() == empId)
                 .findFirst()
                 .orElseThrow(() -> new EmployeePayrollException("Employee Not Found"));
     }
@@ -36,21 +36,20 @@ public class EmployeePayrollService implements IEmployeePayrollService {
     public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO) {
         EmployeePayrollData employeePayrollData = new EmployeePayrollData(empPayrollDTO);
         employeePayrollList.add(employeePayrollData);
-        log.debug("Emp Data: " + employeePayrollData.toString());
+        log.debug("Emp Data: " + employeePayrollData);
         return employeePayrollRepository.save(employeePayrollData);
     }
 
     @Override
     public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
-        EmployeePayrollData empData = this.getEmployeePayrollDataById(empId);
-        empData.setName(empPayrollDTO.name);
-        empData.setSalary(empPayrollDTO.salary);
-        employeePayrollList.set(empId, empData);
-        return empData;
+        EmployeePayrollData employeePayrollData = this.getEmployeePayrollDataById(empId);
+        employeePayrollData.updateEmployeePayrollData(empPayrollDTO);
+        return employeePayrollRepository.save(employeePayrollData);
     }
 
     @Override
     public void deleteEmployeePayrollData(int empId) {
-        employeePayrollList.remove(empId);
+        EmployeePayrollData employeePayrollData = this.getEmployeePayrollDataById(empId);
+        employeePayrollRepository.delete(employeePayrollData);
     }
 }
